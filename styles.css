@@ -1,0 +1,606 @@
+/* ════════════════ FUENTE ════════════════ */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
+
+/* ════════════════ PALETA EXTENDIDA ════════════════ */
+:root {
+    --azul: #0077ff;
+    --azul-oscuro: #0047ab;
+    --azul-profundo: #002f6c;
+    --azul-claro: #00aaff;
+
+    --amarillo: #ffe600;
+    --amarillo-soft: #fff34d;
+    --amarillo-pastel: #fff9b0;
+
+    --morado: #3b2fff;
+    --morado-oscuro: #2a1fcc;
+    --morado-claro: #6a5cff;
+
+    --blanco: #ffffff;
+    --gris-claro: #f5f7ff;
+    --gris: #dfe6ff;
+    --negro-suave: #1a1a1a;
+}
+
+/* ════════════════ BASE ════════════════ */
+body {
+    font-family: 'Fredoka', sans-serif;
+    background: linear-gradient(135deg, var(--azul-claro), var(--azul), var(--azul-oscuro));
+    color: var(--negro-suave);
+}
+
+* {
+    transition: all 0.25s ease;
+}
+
+/* ════════════════ CARRUSEL ════════════════ */
+#heroCarousel {
+    max-width: 1100px;
+    margin: 30px auto;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+    border: 4px solid var(--azul);
+}
+
+.carousel-slide {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(135deg, var(--azul-claro), var(--azul), var(--azul-profundo));
+}
+
+.carousel-slide::after {
+    content: "✦ ✧ ✦";
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.carousel-slide>div {
+    position: relative;
+    z-index: 2;
+    padding: 28px 38px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.carousel-icon {
+    font-size: 3rem;
+    color: var(--amarillo);
+}
+
+.carousel-slide h1 {
+    font-weight: 800;
+    color: var(--amarillo);
+    text-shadow:
+        -2px -2px 0 var(--morado),
+        2px -2px 0 var(--morado),
+        -2px 2px 0 var(--morado),
+        2px 2px 0 var(--morado),
+        0px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-slide p {
+    color: var(--blanco);
+}
+
+/* ════════════════ ALERTAS ════════════════ */
+.alert {
+    border-radius: 15px;
+    border: 2px solid var(--morado);
+    background: var(--amarillo-pastel);
+}
+
+/* ════════════════ TITULOS ════════════════ */
+h2 {
+    color: var(--amarillo);
+    text-shadow:
+        -2px -2px 0 var(--morado),
+        2px -2px 0 var(--morado),
+        -2px 2px 0 var(--morado),
+        2px 2px 0 var(--morado);
+}
+
+/* ════════════════ SERVICIOS ════════════════ */
+.service-card {
+    border-radius: 20px;
+    border: 2px solid var(--morado);
+    background: var(--blanco);
+}
+
+/* ════════════════ PRECIOS (MEJORADO) ════════════════ */
+
+/* quitar blanco bootstrap */
+#precios.bg-light {
+    background: none !important;
+}
+
+/* fondo extrovertido */
+#precios {
+    background: linear-gradient(135deg,
+            rgba(0, 170, 255, 0.2),
+            rgba(0, 119, 255, 0.3),
+            rgba(0, 71, 171, 0.35));
+    backdrop-filter: blur(8px);
+    border-radius: 30px;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 60px 20px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* centrar */
+#precios .row {
+    justify-content: center;
+}
+
+/* tarjetas */
+.price-card {
+    border-radius: 25px;
+    border: 2px solid var(--morado);
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+}
+
+.price-card:hover {
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+}
+
+/* destacada */
+.price-card.featured {
+    background: linear-gradient(135deg,
+            var(--amarillo),
+            #ffd000,
+            var(--amarillo-soft));
+    border: 3px solid var(--morado);
+    transform: scale(1.06);
+}
+
+/* precio */
+.price-amount {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--azul-oscuro);
+}
+
+/* lista */
+.price-card ul {
+    text-align: center;
+}
+
+.price-card ul li {
+    text-align: left;
+    display: inline-block;
+}
+
+/* botones */
+#precios .btn {
+    font-weight: 700;
+}
+
+/* ════════════════ RESPONSIVE ════════════════ */
+@media (max-width: 768px) {
+    #heroCarousel {
+        margin: 15px;
+    }
+}
+
+
+
+
+
+
+.lavanav {
+    background: linear-gradient(135deg, #0a6fd4 0%, #1a8be8 50%, #0d7de0 100%);
+    border-bottom: 4px solid #f9d12e;
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Logo icono */
+.brand-icon {
+    width: 52px;
+    height: 52px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #f9d12e;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+/* Texto del logo */
+.brand-top {
+    font-family: 'Fredoka One', cursive;
+    font-size: 18px;
+    color: #f9d12e;
+    text-shadow: 1px 1px 0 #b8860b, 2px 2px 0 rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    line-height: 1;
+}
+
+.brand-name {
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow:
+        -1px -1px 0 #7b2fbe,
+        1px -1px 0 #7b2fbe,
+        -1px 1px 0 #7b2fbe,
+        1px 1px 0 #7b2fbe,
+        2px 3px 0 rgba(0, 0, 0, 0.3);
+    line-height: 1;
+}
+
+/* Links de navegación */
+.lavanav .nav-link {
+    font-weight: 700;
+    font-size: 15px;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 50px;
+    transition: all 0.25s ease;
+    position: relative;
+}
+
+.lavanav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: #f9d12e;
+    border-radius: 2px;
+    transition: width 0.25s ease;
+}
+
+.lavanav .nav-link:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #f9d12e !important;
+}
+
+.lavanav .nav-link:hover::after,
+.lavanav .nav-link.active::after {
+    width: 60%;
+}
+
+.lavanav .nav-link.active {
+    background: rgba(255, 255, 255, 0.2);
+    color: #f9d12e !important;
+}
+
+/* Botón WhatsApp */
+.btn-whatsapp {
+    background: #25d366 !important;
+    border: 2px solid #1da851 !important;
+    border-radius: 50px !important;
+    font-weight: 700;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.25s ease !important;
+}
+
+.btn-whatsapp:hover {
+    background: #1da851 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Toggler en mobile */
+.lavanav .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.lavanav .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+
+
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: url('img/fondo-burbujas.png');
+    background-size: cover;
+}
+
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== VARIABLES (más orden y control) ===== */
+:root {
+    --rosa: #f8a5c2;
+    --verde: #d4e157;
+    --celeste: #81d4fa;
+    --naranja: #f6b26b;
+    --amarillo: #fff176;
+
+    --precio-bg: #ffdede;
+    --texto: #333;
+}
+
+/* ===== CONTENEDOR ===== */
+.cartel-precios {
+    background: #f5f5f5;
+    padding: 25px 25px 20px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.25),
+        inset 0 0 10px rgba(255,255,255,0.6);
+}
+
+/* ===== TITULO ===== */
+.titulo-cartel {
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    color: #2d2d8a;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* ===== ITEM ===== */
+.item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: var(--texto);
+    transition: all 0.25s ease;
+}
+
+/* HOVER SUAVE */
+.item:hover {
+    transform: translateX(5px);
+}
+
+/* ===== FLECHA ===== */
+.item::after {
+    content: "";
+    position: absolute;
+    right: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+}
+
+/* ===== PRECIO ===== */
+.item span:last-child {
+    background: var(--precio-bg);
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-weight: 800;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
+    min-width: 80px;
+    text-align: center;
+}
+
+/* ===== COLORES (más consistentes) ===== */
+.rosa {
+    background: linear-gradient(90deg, var(--rosa), #f78fb3);
+}
+.rosa::after {
+    border-left: 18px solid var(--rosa);
+}
+
+.verde {
+    background: linear-gradient(90deg, var(--verde), #c0d836);
+}
+.verde::after {
+    border-left: 18px solid var(--verde);
+}
+
+.celeste {
+    background: linear-gradient(90deg, var(--celeste), #5dade2);
+}
+.celeste::after {
+    border-left: 18px solid var(--celeste);
+}
+
+.naranja {
+    background: linear-gradient(90deg, var(--naranja), #e59866);
+}
+.naranja::after {
+    border-left: 18px solid var(--naranja);
+}
+
+.amarillo {
+    background: linear-gradient(90deg, var(--amarillo), #f4d03f);
+}
+.amarillo::after {
+    border-left: 18px solid var(--amarillo);
+}
+
+/* ===== SEPARACIÓN ENTRE BLOQUES ===== */
+section.container {
+    margin-bottom: 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 576px) {
+
+    .cartel-precios {
+        padding: 20px;
+    }
+
+    .item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .item span:last-child {
+        align-self: flex-end;
+    }
+
+    .item::after {
+        display: none; /* evita romper diseño en móvil */
+    }
+}
+
+/* ════════════════ PALETA ════════════════ */
+:root {
+    --primary: #2563eb;
+    --secondary: #64748b;
+    --accent: #22c55e;
+    --border: #e2e8f0;
+}
+
+/* ════════════════ FAQ ════════════════ */
+#faq {
+    background: transparent;
+}
+
+#faq h2 {
+    color: var(--primary);
+}
+
+#faq .badge {
+    background: rgba(100, 116, 139, 0.15) !important;
+    color: var(--secondary) !important;
+}
+
+/* Accordion */
+.accordion-item {
+    background: transparent;
+}
+
+.accordion-button {
+    background: rgba(241, 245, 249, 0.6);
+    backdrop-filter: blur(6px);
+    color: #0f172a;
+}
+
+.accordion-button:not(.collapsed) {
+    background: rgba(37, 99, 235, 0.85);
+    color: #fff;
+}
+
+.accordion-body {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(6px);
+}
+
+/* ════════════════ CONTACTO ════════════════ */
+#contacto {
+    background: transparent !important;
+}
+
+#contacto h2 {
+    color: var(--primary);
+}
+
+#contacto .badge {
+    background: rgba(37, 99, 235, 0.15) !important;
+    color: var(--primary) !important;
+}
+
+/* Cards transparentes */
+.card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--border);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+.form-control,
+.form-select {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid var(--border);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.15rem rgba(37, 99, 235, 0.2);
+}
+
+/* Botón WhatsApp */
+.btn-success {
+    background: var(--accent);
+    border: none;
+}
+
+.btn-success:hover {
+    background: #16a34a;
+}
+
+/* Botones outline */
+.btn-outline-primary {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
+/* ════════════════ TOAST ════════════════ */
+.toast {
+    background: rgba(37, 99, 235, 0.9) !important;
+    backdrop-filter: blur(6px);
+}
+
+/* ════════════════ WHATSAPP FLOAT ════════════════ */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--accent);
+    color: white;
+    font-size: 24px;
+    padding: 12px 16px;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    z-index: 999;
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    background: #16a34a;
+}

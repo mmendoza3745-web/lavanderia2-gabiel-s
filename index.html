@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GABRIEL'S - Inicio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg lavanav">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="img/logotipo01.png" alt="logo" width="120">
+                <div class="d-flex flex-column">
+                    <span class="brand-top">Lavandería</span>
+                    <span class="brand-name">Gabriel's</span>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+
+                <a href="https://wa.me/51926646175"
+                    class="btn btn-success btn-whatsapp ms-3 d-flex align-items-center gap-2">
+                    WhatsApp
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <main>
+
+        <br><br>
+        <!-- ════════════════ CARRUSEL ════════════════ -->
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4500">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="carousel-slide slide-1">
+                        <div>
+                            <i class="bi bi-basket3-fill carousel-icon"></i>
+                            <h1 class="display-5">Lavandería Gabriel's</h1>
+                            <p class="lead mb-4">Rápido, económico y de calidad garantizada</p>
+                            <a href="https://wa.me/51926646175"
+                                class="btn btn-light btn-lg rounded-pill px-4 fw-semibold">
+                                <i class="bi bi-whatsapp text-success me-2"></i>Contáctanos ahora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-slide slide-2">
+                        <div>
+                            <i class="bi bi-stars carousel-icon"></i>
+                            <h1 class="display-5">20% de descuento</h1>
+                            <p class="lead mb-4">En tu primer servicio con nosotros — ¡aprovéchalo hoy!</p>
+                            <a href="https://wa.me/51926646175"
+                                class="btn btn-light btn-lg rounded-pill px-4 fw-semibold">
+                                Pedir mi descuento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-slide slide-3">
+                        <div>
+                            <i class="bi bi-truck carousel-icon"></i>
+                            <h1 class="display-5">Delivery gratuito</h1>
+                            <p class="lead mb-4">En pedidos mayores a S/ 30 — recoge y entrega en tu puerta</p>
+                            <a href="https://wa.me/51926646175"
+                                class="btn btn-light btn-lg rounded-pill px-4 fw-semibold">
+                                Solicitar delivery
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+
+
+
+        <!-- ════════════════ ALERTAS / PROMOCIONES ════════════════ -->
+        <div class="container mt-4">
+            <div class="alert alert-success alert-dismissible fade show d-flex align-items-center gap-2" role="alert">
+                <i class="bi bi-tag-fill fs-5"></i>
+                <span><strong>Promo activa:</strong> 20% de descuento en tu primer servicio. ¡Válido este mes!</span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+            <div class="alert alert-info alert-dismissible fade show d-flex align-items-center gap-2" role="alert">
+                <i class="bi bi-truck fs-5"></i>
+                <span><strong>Delivery gratis</strong> en compras mayores a S/ 30 dentro de Lima.</span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        </div>
+
+
+        <!-- ════════════════ SERVICIOS ════════════════ -->
+        <section id="servicios" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 mb-2">Lo que
+                        ofrecemos</span>
+                    <h2 class="fw-bold">Nuestros Servicios</h2>
+                    <p class="text-muted">Todo lo que tu ropa necesita, en un solo lugar.</p>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+                        <div class="card service-card shadow-sm h-100 p-3 text-center">
+                            <div class="card-body">
+                                <div class="service-icon bg-primary-subtle">
+                                    <i class="bi bi-basket3 text-primary"></i>
+                                </div>
+                                <h5 class="fw-bold">Lavado Normal</h5>
+                                <p class="text-muted">Ideal para ropa de uso diario. Proceso cuidadoso con detergente de
+                                    calidad.</p>
+                                <span class="badge bg-primary rounded-pill">Desde S/ 4 / kg</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card service-card shadow-sm h-100 p-3 text-center">
+                            <div class="card-body">
+                                <div class="service-icon bg-info-subtle">
+                                    <i class="bi bi-droplet text-info"></i>
+                                </div>
+                                <h5 class="fw-bold">Lavado en Seco</h5>
+                                <p class="text-muted">Perfecto para prendas delicadas: sacos, vestidos de gala, trajes y
+                                    más.</p>
+                                <span class="badge bg-info rounded-pill">Desde S/ 12 / prenda</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card service-card shadow-sm h-100 p-3 text-center">
+                            <div class="card-body">
+                                <div class="service-icon bg-danger-subtle">
+                                    <i class="bi bi-bag-heart text-danger"></i>
+                                </div>
+                                <h5 class="fw-bold">Ropa de Bebé</h5>
+                                <p class="text-muted">Productos hipoalergénicos y suaves. Más que limpio, seguro para tu
+                                    bebé.</p>
+                                <span class="badge bg-danger rounded-pill">Desde S/ 5 / kg</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card service-card shadow-sm h-100 p-3 text-center">
+                            <div class="card-body">
+                                <div class="service-icon bg-warning-subtle">
+                                    <i class="bi bi-lightning-charge text-warning"></i>
+                                </div>
+                                <h5 class="fw-bold">Servicio Express</h5>
+                                <p class="text-muted">¿Urgente? Te entregamos en 24 horas con la misma calidad de
+                                    siempre.
+                                </p>
+                                <span class="badge bg-warning text-dark rounded-pill">+50% Express</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card service-card shadow-sm h-100 p-3 text-center">
+                            <div class="card-body">
+                                <div class="service-icon bg-success-subtle">
+                                    <i class="bi bi-clipboard2-check text-success"></i>
+                                </div>
+                                <h5 class="fw-bold">Planchado</h5>
+                                <p class="text-muted">Ropa perfectamente planchada y lista para usar. Servicio
+                                    individual o
+                                    por kilo.</p>
+                                <span class="badge bg-success rounded-pill">Desde S/ 3 / prenda</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card service-card shadow-sm h-100 p-3 text-center">
+                            <div class="card-body">
+                                <div class="service-icon" style="background:#f3e8ff;">
+                                    <i class="bi bi-truck" style="color:#6f42c1;"></i>
+                                </div>
+                                <h5 class="fw-bold">Recojo y Delivery</h5>
+                                <p class="text-muted">Coordinamos el recojo en tu domicilio y la entrega cuando esté
+                                    lista.
+                                </p>
+                                <span class="badge rounded-pill" style="background:#6f42c1;">Gratis +S/30</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ════════════════ PRECIOS ════════════════ -->
+        <section id="precios" class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge bg-success-subtle text-success rounded-pill px-3 py-2 mb-2">Tarifas claras</span>
+                    <h2 class="fw-bold">Nuestros Precios</h2>
+                    <p class="text-muted">Sin sorpresas. Paga solo por lo que usas.</p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+
+                    <div class="col-md-4">
+                        <div class="card price-card shadow-sm h-100 p-4 text-center">
+                            <div class="card-body">
+                                <h5 class="fw-bold">Básico</h5>
+                                <p class="text-muted small">Lavado normal</p>
+                                <div class="price-amount">S/ 4</div>
+                                <p class="text-muted mb-4">por kilogramo</p>
+                                <ul class="list-unstyled text-start">
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Lavado con
+                                        detergente</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Secado
+                                    </li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Doblado
+                                    </li>
+                                    <li class="mb-2 text-muted"><i class="bi bi-x-circle me-2"></i>Planchado</li>
+                                    <li class="mb-2 text-muted"><i class="bi bi-x-circle me-2"></i>Express</li>
+                                </ul>
+                                <a href="https://wa.me/51926646175"
+                                    class="btn btn-outline-primary w-100 rounded-pill">Solicitar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card price-card featured shadow h-100 p-4 text-center">
+                            <div class="card-body">
+                                <span class="price-badge d-inline-block mb-2">Más popular</span>
+                                <h5 class="fw-bold">Completo</h5>
+                                <p class="text-muted small">Lavado + planchado</p>
+                                <div class="price-amount">S/ 7</div>
+                                <p class="text-muted mb-4">por kilogramo</p>
+                                <ul class="list-unstyled text-start">
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Lavado con
+                                        detergente</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Secado
+                                    </li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Doblado
+                                    </li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Planchado
+                                    </li>
+                                    <li class="mb-2 text-muted"><i class="bi bi-x-circle me-2"></i>Express</li>
+                                </ul>
+                                <a href="https://wa.me/51926646175"
+                                    class="btn btn-primary w-100 rounded-pill">Solicitar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card price-card shadow-sm h-100 p-4 text-center">
+                            <div class="card-body">
+                                <h5 class="fw-bold">Express</h5>
+                                <p class="text-muted small">Entrega en 24 h</p>
+                                <div class="price-amount">S/ 10</div>
+                                <p class="text-muted mb-4">por kilogramo</p>
+                                <ul class="list-unstyled text-start">
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Lavado con
+                                        detergente</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Secado
+                                    </li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Doblado
+                                    </li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Planchado
+                                    </li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Entrega 24
+                                        h
+                                    </li>
+                                </ul>
+                                <a href="https://wa.me/51926646175"
+                                    class="btn btn-outline-primary w-100 rounded-pill">Solicitar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ════════════════ PROCESO ════════════════ -->
+        <section id="proceso" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge bg-info-subtle text-info rounded-pill px-3 py-2 mb-2">Fácil y rápido</span>
+                    <h2 class="fw-bold">¿Cómo funciona?</h2>
+                    <p class="text-muted">Solo 4 pasos y tu ropa estará impecable.</p>
+                </div>
+
+                <div class="row text-center g-4">
+                    <div class="col-6 col-md-3">
+                        <div class="step-circle">1</div>
+                        <i class="bi bi-whatsapp fs-2 text-success mb-2 d-block"></i>
+                        <h6 class="fw-bold">Contáctanos</h6>
+                        <p class="text-muted small">Escríbenos por WhatsApp y coordina tu pedido.</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="step-circle">2</div>
+                        <i class="bi bi-box-arrow-up fs-2 text-primary mb-2 d-block"></i>
+                        <h6 class="fw-bold">Recojo</h6>
+                        <p class="text-muted small">Recogemos tu ropa en la puerta de tu casa.</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="step-circle">3</div>
+                        <i class="bi bi-washing-machine fs-2 text-info mb-2 d-block"></i>
+                        <h6 class="fw-bold">Lavamos</h6>
+                        <p class="text-muted small">Proceso profesional con insumos de alta calidad.</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="step-circle">4</div>
+                        <i class="bi bi-box-arrow-in-down fs-2 text-warning mb-2 d-block"></i>
+                        <h6 class="fw-bold">Entregamos</h6>
+                        <p class="text-muted small">Tu ropa limpia y lista en tu domicilio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <a href="https://wa.me/51926646175" class="whatsapp-btn">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+
+
+
+    </main>
+
+    <footer class="bg-primary text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">Gabriel's</h4>
+                    <p class="small">
+                        Tu ropa limpia, fresca y lista en tiempo récord.
+                        Calidad, confianza y atención personalizada.
+                    </p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle-fill me-2"></i>Lavado normal</li>
+                        <li><i class="bi bi-check-circle-fill me-2"></i>Lavado en seco</li>
+                        <li><i class="bi bi-check-circle-fill me-2"></i>Planchado</li>
+                        <li><i class="bi bi-check-circle-fill me-2"></i>Servicio express</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Contacto</h5>
+                    <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Lima, Perú</p>
+                    <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+51 926646175</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i>contacto@lavanderia.com</p>
+
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-light opacity-50">
+
+            <div class="text-center small">
+                © 2026 Lavandería Gabriel's · Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- JavaScript personalizado -->
+    <script src="main.js"></script>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+
+</html>
